@@ -1,8 +1,7 @@
 import microphone from "../app/assets/img/microphone.png";
 import { Row, Col } from "reactstrap";
 import VentForm from "../app/utils/VentForm";
-import SubmitText from "../features/Form/SubmitText";
-import { useState } from "react";
+
 
 const Vent = () => {
   return (

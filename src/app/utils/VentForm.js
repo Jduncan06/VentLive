@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import { FormGroup, Label, Button } from "reactstrap";
 import { Formik, Field, Form } from "formik";
-import SubmitText from "../../features/Form/SubmitText";
 
 const VentForm = () => {
   const formRef = useRef(null);
@@ -21,7 +20,11 @@ const VentForm = () => {
   };
 
   const handleSubmit = (e) => {
+<<<<<<< HEAD
     date: new Date(Date.now()).toISOString()
+=======
+    
+>>>>>>> 9be311aabf107c944ec907defe7527209f77d991
     e.preventDefault();
     setLoading(true);
 
@@ -86,7 +89,11 @@ const VentForm = () => {
           name= "date"
           style={{backgroundColor:'#F16A74',
           border: 'solid 1px #F16A74'}}
+<<<<<<< HEAD
           date={Date.now()}
+=======
+          date={new Date.now().toISOString()}
+>>>>>>> 9be311aabf107c944ec907defe7527209f77d991
         >
           {btnText()}
         </Button>

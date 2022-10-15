@@ -14,15 +14,6 @@ Header {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "Oswald", sans-serif;
-  color: black;
-  font-size: 15pt;
-  z-index: 0;
-  opacity: 75%;
-}
-.nav-link:hover {
-  font-size: larger;
-  opacity: 100%;
 }
 
 code {
@@ -49,47 +40,33 @@ code {
   height: 100%;
   width: 100%;
 }
-.cardContainer {
-  margin: 0;
-  padding: 0;
-}
-.cardButton:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.contentContainer {
-  position: relative;
-  
-}
+
 .content {
   position: absolute;
-  -webkit-text-stroke: 1px black;
-    height: 100%;
-    width: 50%;
-    z-index: index 3;
-    top: 0;
-    display: left;
-    color: white;
-    margin-left: 0;
-    padding: 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 25pt;
-    margin-top: 0;
-    align-items: flex-start;
-    padding-left: 0;
-    margin-left: 1.6rem;
+  @media screen (max-width: 758px) {
+    height: 50px;
+    width: 50px;
   }
-.unpack {
-  font-size: 50pt;
-  color: #f16a74;
-  text-decoration: solid;
+  @media screen(min-width: 759px) {
+    height: 100%;
+  }
+  width: 100px;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
+  color: white;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 40pt;
 }
 
 .contentShows {
   position: absolute;
-  -webkit-text-stroke: 1px black;
-  width: 90%;
+  width: 100%;
   height: 100%;
   z-index: 3;
   top: 0;
@@ -97,52 +74,27 @@ code {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: flex;
+  align-items: flex-start;
   color: white;
   margin: 0;
+  margin-right: 1rem;
   padding: 0;
-  font-family: "Oswald", sans-serif;
 }
 .showsPic {
-  height: 100%;
+  height: 50%;
   width: 100%;
   opacity: 0.5;
   margin-left: 0;
   margin-top: 0;
   padding-top: 0;
   padding-left: 0;
-  margin-right: 0;
-  padding-right: 0;
 }
 
 .dates {
-  margin: 0;
-  height: flex-fill;
-  padding: 0;
-  font-family: "Oswald", sans-serif;
-}
-
-.datesCard {
-  justify-content: middle;
-  justify-items: middle;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  column-fill: auto;
-}
-
-
-.dateTime {
   margin-top: 0;
-  margin-bottom: 0;
-  border-right: 2px;
-  border-top: 0;
-  border-left: 0;
-  border-bottom: 0;
-  border-color: #f16a74;
-  border-style: groove;
-  vertical-align: baseline;
+  margin-right: 0;
+  height: 100%;
+  padding: 0;
 }
 
 #Shows {
@@ -150,21 +102,17 @@ code {
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
-  margin-right: 0;
   margin-top: 0;
   color: white;
-  font-family: "Oswald", sans-serif;
 }
 
 .contentContact {
   position: absolute;
-  -webkit-text-stroke: 1px black;
   width: 75%;
   height: 100%;
   z-index: 3;
   top: 0;
   display: flex;
-  font-family: "Oswald", sans-serif;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -176,29 +124,26 @@ code {
 
 .contentVent {
   position: absolute;
-  -webkit-text-stroke: 1px black;
-  font-family: "Oswald", sans-serif;
   top: 0;
   width: 50%;
   @media screen (max-width: 758px) {
     height: 10px;
-    display: left;
+    display: center;
   }
   @media screen(min-width: 759px) {
     height: 100%;
-    align-items: flex-end;
-
-    z-index: index 3;
-    top: 0;
-    display: left;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex;
-    color: white;
-    margin-left: 2rem;
-    padding: right 0;
   }
+
+  z-index: index 3;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  margin-left: 2rem;
+  padding: right 0;
 }
 
 .aboutPic {
@@ -218,7 +163,7 @@ code {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex;
+  align-items: flex-end;
   padding: right 0;
   margin: 0;
 }
@@ -227,10 +172,11 @@ code {
 }
 
 .ventForm {
-  width: 75%;
-  height: 100%;
-  z-index: index 1;
-  margin-left: 1rem;
+  width: 50%;
+  height: 10/0%;
+  z-index: index 4;
+  top: 0;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -238,7 +184,7 @@ code {
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
 }
 
 .contactPic {
@@ -246,24 +192,23 @@ code {
   width: 100%;
   overflow-x: hidden;
   opacity: 0.45;
-  margin-left: 0.5rem;
+  margin-left: 0;
   padding-left: 0;
 }
 
 .formBtn {
   background-color: #f16a74;
 }
-.formBtn:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.contactBtn:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+
+.unpack {
+  width: 50%;
+  font-size: 50pt;
+  color: #f16a74;
+  text-decoration: solid;
 }
 
 .logo {
-  height: 20%;
+  height: 30%;
   width: 30%;
   z-index: 3;
   top: 0;
@@ -278,39 +223,29 @@ code {
 }
 .about {
   color: white;
-  font-family: "Oswald", sans-serif;
 }
 
 .vent {
   color: white;
-  font-family: "Oswald", sans-serif;
   padding: 0;
 }
 .contact {
   color: white;
-  font-family: "Oswald", sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
 .site-footer {
   background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
 }
 .btnYoutube {
-  margin-bottom: 2rem;
-  margin-top: 0;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  color: red;
-  font-size: x-large;
-}
-.btnYoutube:hover {
-  margin-bottom: 2rem;
   color: red;
   font-size: xx-large;
+  cursor: pointer;
+}
+.btnYoutube:hover {
+  color: red;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -327,27 +262,15 @@ code {
   transform: scale(1.1);
   cursor: pointer;
 }
-.btnTwitter {
-  margin-bottom: 2rem;
-  position: relative;
-  margin-top: 0;
-  color: #1da1f2;
-  font-size: x-large;
-  margin: 0;
-  padding: 0;
-}
-.btnTwitter:hover {
-  margin-bottom: 2rem;
-  color: #1da1f2;
-  transform: translateY(-4px);
-  transition:0.3s;
+.btnInstagram:hover {
+  color: #c13584;
+  transform: scale(1.1);
   cursor: pointer;
 }
-.socialContainer {
-  margin: 0;
-  padding: 0;
+.btnTwitter {
+  color: #1da1f2;
+  font-size: xx-large;
 }
-
 .form-style {
   background-color: #4c4e52;
 }
@@ -355,20 +278,4 @@ code {
   width: 100%;
   padding: 0;
   margin: 0;
-}
-.button {
-  -webkit-text-stroke: 0px black;
-  font-size: 20pt;
-  color: #f16a74;
-  fill: black;
-  border-radius: 2px;
-  border: #f16a74;
-  font-family: "Oswald", sans-serif;
-}
-.button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.quote {
-  font-style: italic;
 }
