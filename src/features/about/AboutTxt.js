@@ -12,7 +12,7 @@ const AboutTxt = () => {
       </p>
       <br />
       <br />
-      <p className="d-none d-md-block">
+      <p className="quote">
         “We had a phenomenal time and laughed so hard. I think that is the first
         good workout my abs have had in a while!” — Ellen
       </p>
