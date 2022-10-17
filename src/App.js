@@ -7,9 +7,7 @@ import Shows from "./components/Shows";
 import Vent from "./components/Vent";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import { fetchShows } from "./features/dates/datesSlice";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+
 
 
 

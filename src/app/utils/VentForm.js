@@ -20,11 +20,7 @@ const VentForm = () => {
   };
 
   const handleSubmit = (e) => {
-<<<<<<< HEAD
-    date: new Date(Date.now()).toISOString()
-=======
-    
->>>>>>> 9be311aabf107c944ec907defe7527209f77d991
+
     e.preventDefault();
     setLoading(true);
 
@@ -43,7 +39,7 @@ const VentForm = () => {
         ventForm: "",
         name: "",
         email: "",
-        Date: '',
+        Date: "",
       }}
     >
       <Form
@@ -64,9 +60,7 @@ const VentForm = () => {
           />
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="name">
-            Your Name (First name is fine)
-          </Label>
+          <Label htmlFor="name">Your Name (First name is fine)</Label>
           <Field
             name="name"
             type="name"
@@ -86,14 +80,9 @@ const VentForm = () => {
         <Button
           type="submit date"
           className="formBtn form-control"
-          name= "date"
-          style={{backgroundColor:'#F16A74',
-          border: 'solid 1px #F16A74'}}
-<<<<<<< HEAD
-          date={Date.now()}
-=======
+          name="date"
+          style={{ backgroundColor: "#F16A74", border: "solid 1px #F16A74" }}
           date={new Date.now().toISOString()}
->>>>>>> 9be311aabf107c944ec907defe7527209f77d991
         >
           {btnText()}
         </Button>
