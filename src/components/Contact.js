@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact" id="Contact">
       <Row id="Contact">
         <Col className=" contentContactText" xs="12" md="4">
-          <h1>PRIVATE EVENT BOOKING</h1>
+          <h1 className="contactTitle">Private Event Booking</h1>
           <br />
           <p>
             The creators of the Vent! Show want to come perform our show for

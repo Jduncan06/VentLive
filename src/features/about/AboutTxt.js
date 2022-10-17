@@ -3,7 +3,7 @@
 const AboutTxt = () => {
   return (
     <>
-      <h1>What is Vent!</h1>
+      <h1 className='aboutTitle'>What is Vent!</h1>
       <p>
         VENT! IS AN INTERACTIVE COMEDY VARIETY SHOW. Comedians unpack your
         gripes, grievances, rants, and raves. Come ready to submit your vents!

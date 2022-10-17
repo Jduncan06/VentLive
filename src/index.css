@@ -14,17 +14,20 @@ Header {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: black;
+  font-size: 15pt;
+  z-index: 0;
+  opacity: 75%;
 }
-
+.nav-link:hover{
+  font-size: x-large;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.tagline{
-  margin: 0;
-  padding: 0;
-}
 .videoBackground {
   position: relative;
   margin-top: 0;
@@ -40,26 +43,38 @@ code {
   height: 100%;
   width: 100%;
 }
+.cardContainer {
+  margin: 0;
+  padding: 0;
+}
+.cardButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .content {
   position: absolute;
   height: 100%;
-  width: 100px;
-  z-index: 3;
+  width: 85%;
+  z-index: index 3;
   top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   color: white;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-size: 40pt;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+.button{
+  margin-left: 2rem;
+}
+.button:hover{
+  transform: scale(1.1);
 }
 
 .contentShows {
   position: absolute;
+  -webkit-text-stroke: 1px black;
   width: 100%;
   height: 100%;
   z-index: 3;
@@ -71,11 +86,11 @@ code {
   align-items: flex-start;
   color: white;
   margin: 0;
-  margin-right: 1rem;
   padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 .showsPic {
-  height: 50%;
+  height: 100%;
   width: 100%;
   opacity: 0.5;
   margin-left: 0;
@@ -89,6 +104,34 @@ code {
   margin-right: 0;
   height: 100%;
   padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.datesCard {
+  color: white;
+  height:100%;
+  width:100%;
+  border-color:'green';
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  justify-items: center;
+  
+}
+
+.dateTime {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-right: 2px;
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-color: #f16a74;
+  border-style: groove;
+  vertical-align: baseline;
 }
 
 #Shows {
@@ -98,15 +141,21 @@ code {
   margin-left: 0;
   margin-top: 0;
   color: white;
+  font-family: "Oswald", sans-serif;
+}
+.contactBtn:hover{
+  transform: scale(1.1);
 }
 
 .contentContact {
   position: absolute;
+  -webkit-text-stroke: 1px black;
   width: 75%;
   height: 100%;
   z-index: 3;
   top: 0;
   display: flex;
+  font-family: "Oswald", sans-serif;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -118,26 +167,31 @@ code {
 
 .contentVent {
   position: absolute;
+  -webkit-text-stroke: 1px black;
+  font-family: "Oswald", sans-serif;
   top: 0;
   width: 50%;
+  margin-left: 2rem;
   @media screen (max-width: 758px) {
     height: 10px;
-    display: center;
+    display: left;
   }
   @media screen(min-width: 759px) {
     height: 100%;
+    align-items: flex-end;
+    z-index: index 3;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    
+    padding: right 0;
   }
 
-  z-index: index 3;
-  top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  color: white;
-  margin-left: 2rem;
-  padding: right 0;
+ 
 }
 
 .aboutPic {
@@ -157,7 +211,7 @@ code {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex;
   padding: right 0;
   margin: 0;
 }
@@ -166,11 +220,10 @@ code {
 }
 
 .ventForm {
-  width: 50%;
-  height: 10/0%;
-  z-index: index 4;
-  top: 0;
-  display: flex;
+  width: 75%;
+  height: 100%;
+  z-index: index 1;
+  margin-left: 1rem;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
@@ -178,7 +231,7 @@ code {
   color: white;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  font-family: "Oswald", sans-serif;
 }
 
 .contactPic {
@@ -194,16 +247,24 @@ code {
   background-color: #f16a74;
 }
 
+.formBtn:hover{
+  transform: scale(1.1);
+}
+.comedians {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .unpack {
-  width: 50%;
+  margin-left: 0;
   font-size: 50pt;
   color: #f16a74;
   text-decoration: solid;
 }
 
 .logo {
-  height: 30%;
-  width: 30%;
+  height: 25%;
+  width: 35%;
   z-index: 3;
   top: 0;
   flex-wrap: wrap;
@@ -215,18 +276,32 @@ code {
   padding: 0;
   position: absolute;
 }
-.about {
+.aboutTitle {
   color: white;
+  -webkit-text-stroke: 1px black;
+  font-family: "Oswald", sans-serif;
+}
+.about{
+  color: white;
+  font-family: "Oswald", sans-serif;
 }
 
 .vent {
   color: white;
   padding: 0;
 }
-.contact {
+.contactTitle {
   color: white;
   margin: 0px;
   padding: 0px;
+  font-family: "Oswald", sans-serif;
+  -webkit-text-stroke: 1px black;
+}
+.contentContactText{
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oswald", sans-serif;
 }
 
 .site-footer {
@@ -234,17 +309,18 @@ code {
 }
 .btnYoutube {
   color: red;
-  font-size: xx-large;
+  font-size: x-large;
   cursor: pointer;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 .btnYoutube:hover {
   color: red;
-  transform: scale(1.1);
-  cursor: pointer;
+  transform: translateY(4px);
 }
 
 .btnInstagram {
-  
+  margin-bottom: 2rem;
   margin-top: 0;
   position: relative;
   color: #c13584;
@@ -253,17 +329,20 @@ code {
 .btnInstagram:hover {
   margin-bottom: 2rem;
   color: #c13584;
-  transform: scale(1.1);
-  cursor: pointer;
+  transform: translateY(4px);
 }
-.btnInstagram:hover {
-  color: #c13584;
-  transform: scale(1.1);
-  cursor: pointer;
-}
+
 .btnTwitter {
   color: #1da1f2;
-  font-size: xx-large;
+  font-size: x-large;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.btnTwitter:hover {
+  margin-bottom: 2rem;
+  color: #1da1f2;
+  transform: translateY(-4px);
+  transition:0.3s;
 }
 .form-style {
   background-color: #4c4e52;

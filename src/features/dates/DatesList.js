@@ -29,7 +29,7 @@ const DatesList = () => {
           <CardBody key={i} className="cardInfo" style={{backgroundColor: "black"}}>
           <Row>
             <Col xs='3' className='dateTime'>
-              <h3 style={{textStyle:'bold', color: 'darkolivegreen', margin: 0 }}>{item.month}</h3>
+              <h3 style={{textStyle:'bold', color: '', margin: 0 }}>{item.month}</h3>
               <h3 style={{margin:0, padding:0}}>{item.day}</h3>
               <p style={{margin:0, padding:0}}>{item.time}</p>
             </Col>
@@ -42,7 +42,8 @@ const DatesList = () => {
               <Button
                 
                 href={item.tickets}
-                style={{backgroundColor: "#29ba68"}}
+                style={{backgroundColor: "#F16A74",
+                border: "solid 1px #F16A74",}}
               >Get Tickets</Button>
             </Col>
             </Row>

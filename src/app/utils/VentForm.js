@@ -66,6 +66,7 @@ const VentForm = () => {
             type="name"
             placeholder="Max Rosenblum"
             className="form-control"
+            style={{height:'100%', width: '100%'}}
           />
         </FormGroup>
         <FormGroup>
@@ -82,7 +83,6 @@ const VentForm = () => {
           className="formBtn form-control"
           name="date"
           style={{ backgroundColor: "#F16A74", border: "solid 1px #F16A74" }}
-          date={new Date.now().toISOString()}
         >
           {btnText()}
         </Button>
