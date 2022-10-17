@@ -309,14 +309,14 @@ code {
 }
 .btnYoutube {
   color: red;
-  font-size: x-large;
+  font-size: xx-large;
   cursor: pointer;
   margin-bottom: 2rem;
   margin-top: 0;
 }
 .btnYoutube:hover {
   color: red;
-  transform: translateY(4px);
+  transform: scale(1.1);
 }
 
 .btnInstagram {
@@ -324,25 +324,24 @@ code {
   margin-top: 0;
   position: relative;
   color: #c13584;
-  font-size: x-large;
+  font-size: xx-large;
 }
 .btnInstagram:hover {
   margin-bottom: 2rem;
   color: #c13584;
-  transform: translateY(4px);
+  transform: scale(1.1);
 }
 
 .btnTwitter {
   color: #1da1f2;
-  font-size: x-large;
+  font-size: xx-large;
   margin-bottom: 2rem;
   margin-top: 0;
 }
 .btnTwitter:hover {
   margin-bottom: 2rem;
   color: #1da1f2;
-  transform: translateY(-4px);
-  transition:0.3s;
+  transform: scale(1.1);
 }
 .form-style {
   background-color: #4c4e52;
