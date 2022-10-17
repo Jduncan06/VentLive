@@ -3,16 +3,11 @@
   background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (max-width: 758px) {
   .content {
     position: absolute;
-    width: 50%;
-    height: 350px;
+    width: 25%;
+    height: 25%;
     z-index: 3;
     top: 0;
     display: flex;
@@ -23,7 +18,7 @@
     color: white;
     padding: 0;
     font-family: "Oswald", sans-serif;
-    font-size: 40pt;
+    font-size: 12pt;
   }
 }
 @media (min-width: 759px) {

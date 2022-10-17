@@ -25,7 +25,7 @@ const DatesList = () => {
         <Card
 
           className="datesCard"
-          style={{ border: "1px solid #4a524d", margin:0, marginBottom:'3px', marginTop:'2px', padding:0 }}>
+          style={{ border: "1px solid black", margin:0, marginBottom:'3px', marginTop:'2px', padding:0 }}>
           <CardBody key={i} className="cardInfo" style={{backgroundColor: "black"}}>
           <Row>
             <Col xs='3' className='dateTime'>
