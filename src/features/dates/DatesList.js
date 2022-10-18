@@ -34,8 +34,8 @@ const DatesList = () => {
               <p style={{margin:0, padding:0}}>{item.time}</p>
             </Col>
             <Col xs='6' className="cardInfo">
-              <p>{item.venue}</p>
-              <p>{item.location}</p>
+              <h3>{item.venue}</h3>
+              <h3>{item.location}</h3>
             </Col>
             
             <Col xs='3' className="cardButton">

@@ -7,7 +7,7 @@ const VentForm = () => {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const scriptUrl =
-    "https://script.google.com/macros/s/AKfycbyt1PC_HN_xthB_I_qNbKvUBMA4-uUdpZdx_8-Q_ftI6Bwy-jzWi0Szos6EZR11Vn3q/exec";
+    "https://script.google.com/macros/s/AKfycby3Q5sZHNQqGnNaVI9T57R11ES8wTTTk8pGWTjw9FLFO2wv1JcIp8N-h5TJalUytkXp/exec";
 
   const btnText = () => {
     if (loading) {
@@ -20,11 +20,10 @@ const VentForm = () => {
   };
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
     setLoading(true);
 
-    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current) })
+    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current)})
       .then((res) => {
         console.log("SUCCESSFULLY SUBMITTED");
         setLoading(false);
@@ -83,6 +82,7 @@ const VentForm = () => {
           className="formBtn form-control"
           name="date"
           style={{ backgroundColor: "#F16A74", border: "solid 1px #F16A74" }}
+          
         >
           {btnText()}
         </Button>

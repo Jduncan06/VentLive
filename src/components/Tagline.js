@@ -7,7 +7,7 @@ const Tagline = () => {
   return (
     <div className="tagLine">
       <video src={ventPromo} loop autoPlay muted className="videoBackground" />
-      <img src={fullLogo} alt="logo" className="logo d-none d-sm-block" />        
+      <img src={fullLogo} alt="logo" className="logo d-none d-lg-block" />        
           <h1 className="content">
             COMEDIANS
             <br />
