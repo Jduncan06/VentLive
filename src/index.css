@@ -3,22 +3,17 @@ body {
   font-family: "Oswald", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 Header {
   background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
-  z-index: 3index;
 }
 .navbar-dark {
+  font-family: "Oswald", sans-serif;
+  opacity: 75%;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "Oswald", sans-serif;
-  color: black;
-  font-size: 15pt;
-  z-index: 0;
-  opacity: 75%;
 }
 .nav-link:hover{
   font-size: x-large;
@@ -54,23 +49,49 @@ code {
 }
 
 .content {
+  @media screen (max-width: 758px) {
   position: absolute;
-  height: 100%;
-  width: 85%;
+  height: 50%;
+  width: 80%;
   z-index: index 3;
   top: 0;
   color: white;
   padding: 0;
   font-family: "Oswald", sans-serif;
-  font-size: 35pt;
+  font-size: 20pt;
   margin-left: 2rem;
+}
+@media screen (min-width: 758px) {
+  position: absolute;
+  height: 100%;
+  max-width: 100%;
+  z-index: index 3;
+  top: 0;
+  color: white;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 40pt;
+  margin-left: 1;
   margin-top: 3rem;
 }
+}
 .button{
+  @media screen (max-width: 758px) {
   margin-left: 2rem;
+  height: 50%;
+  white-space: nowrap;
+  }
+  @media screen (min-width: 758px) {
+    margin-left: 2rem;
+    white-space: nowrap;
+  }
 }
 .button:hover{
   transform: scale(1.1);
+}
+.gripes{
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .contentShows {
@@ -260,15 +281,17 @@ code {
   z-index: 2;
 }
 .unpack {
-  @media (max-width: 758px) {
-    
-  }
-  margin-left: 0;
-  font-size: 50pt;
   color: #f16a74;
-  text-decoration: solid;
-  @media screen {
-    
+  @media screen (max-width: 758px) {
+    margin-left: 0;
+    font-size: 30pt;
+    text-decoration: solid;
+  }
+ 
+  @media screen (min-width:758px) {
+    margin-left: 0;
+    font-size: 50pt;
+    text-decoration: solid;
   }
 }
 
@@ -277,9 +300,6 @@ code {
   width: 35%;
   z-index: 3;
   top: 0;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
   color: white;
   margin-left: 2rem;
   margin-top: 1rem;
