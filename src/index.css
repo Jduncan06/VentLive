@@ -352,7 +352,6 @@ code {
 }
 .btnYoutube:hover {
   color: red;
-  transform: scale(1.1);
 }
 
 .btnInstagram {
@@ -363,9 +362,7 @@ code {
   font-size: xx-large;
 }
 .btnInstagram:hover {
-  margin-bottom: 2rem;
   color: #c13584;
-  transform: scale(1.1);
 }
 
 .btnTwitter {
@@ -375,10 +372,13 @@ code {
   margin-top: 0;
 }
 .btnTwitter:hover {
-  margin-bottom: 2rem;
   color: #1da1f2;
-  transform: scale(1.1);
 }
+
+.socialBtn:hover {
+  font-size:2.2rem
+}
+
 .form-style {
   background-color: #4c4e52;
 }
