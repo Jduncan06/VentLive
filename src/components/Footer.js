@@ -7,19 +7,19 @@ const Footer = () => {
         <Row style={{height:'50%'}}>
           <Col style={{height:'50%'}}>
             <a
-              className="btnYoutube"
+              className="btnYoutube socialBtn"
               href="https://www.youtube.com/channel/UC_tWt7pYW8k9qcqbe--JXWw"
             >
               <i className="fa fa-youtube-play" />
             </a>{" "}
             <a
-              className=" btnInstagram"
+              className=" btnInstagram socialBtn"
               href="http://instagram.com/ventshowlive"
             >
               <i className="fa fa-instagram" />
             </a>{" "}
             <a
-              className="btnTwitter"
+              className="btnTwitter socialBtn"
               href="http://twitter.com/ventshowlive"
             >
               <i className="fa fa-twitter" />
