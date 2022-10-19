@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <Container className="socialContainer">
-        <Row style={{height:'50%'}}>
-          <Col style={{height:'50%'}}>
+        <Row style={{ height: "50%" }}>
+          <Col style={{ height: "50%" }}>
             <a
               className="btnYoutube socialBtn"
               href="https://www.youtube.com/channel/UC_tWt7pYW8k9qcqbe--JXWw"
             >
-              <i className="fa fa-youtube-play socialBtn"  />
+              <i className="fa fa-youtube-play socialBtn" />
             </a>{" "}
             <a
               className=" btnInstagram socialBtn"

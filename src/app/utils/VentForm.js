@@ -23,7 +23,7 @@ const VentForm = () => {
     e.preventDefault();
     setLoading(true);
 
-    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current)})
+    fetch(scriptUrl, { method: "POST", body: new FormData(formRef.current) })
       .then((res) => {
         console.log("SUCCESSFULLY SUBMITTED");
         setLoading(false);
@@ -65,7 +65,7 @@ const VentForm = () => {
             type="name"
             placeholder="Max Rosenblum"
             className="form-control"
-            style={{height:'100%', width: '100%'}}
+            style={{ height: "100%", width: "100%" }}
           />
         </FormGroup>
         <FormGroup>
@@ -82,7 +82,6 @@ const VentForm = () => {
           className="formBtn form-control"
           name="date"
           style={{ backgroundColor: "#F16A74", border: "solid 1px #F16A74" }}
-          
         >
           {btnText()}
         </Button>

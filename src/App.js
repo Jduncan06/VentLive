@@ -8,9 +8,6 @@ import Vent from "./components/Vent";
 import Contact from "./components/Contact";
 import About from "./components/About";
 
-
-
-
 function App() {
   return (
     <div className="App">
