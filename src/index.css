@@ -97,7 +97,7 @@ code {
 .contentShows {
   position: absolute;
   -webkit-text-stroke: 1px black;
-  width: 100%;
+  width: 90%;
   height: 100%;
   z-index: 3;
   top: 0;
@@ -128,13 +128,20 @@ code {
   padding: 0;
   font-family: "Oswald", sans-serif;
 }
-.signature{
-  color: #F16A74;
+.signature {
+  color: #f16a74;
   font-family: "Oswald", sans-serif;
   font-size: 5pt;
   margin: 0;
   padding: 0;
   margin-right: 1.8rem;
+}
+.navContainer {
+  @media screen(max-width: 758px) {
+    border-style: solid;
+    border-top-color: white;
+    border-width: 2px;
+  }
 }
 
 .datesCard {
@@ -248,14 +255,14 @@ code {
 .socialBtn:hover {
   font-size: 2.3rem;
 }
-.form-control{
+.form-control {
   font-family: "Oswald", sans-serif;
 }
-Label{
+Label {
   font-family: "Oswald", sans-serif;
 }
 
-.quote{
+.quote {
   font-style: italic;
 }
 

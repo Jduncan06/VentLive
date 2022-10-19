@@ -30,6 +30,16 @@
   .logo {
     display: none;
   }
+  .navigation {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-link{
+    opacity: 1;
+  }
 }
 @media (min-width: 1000px) {
   .content {

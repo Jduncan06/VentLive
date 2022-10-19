@@ -16,8 +16,8 @@ const Header = () => {
       <Navbar className="navbar-dark" fixed="top" z-index="5" expand="md">
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse isOpen={menuOpen} navbar>
-          <Nav sticky="top" className="ms-auto" navbar>
-            <NavItem>
+          <Nav sticky="top" className="ms-auto navigation" navbar>
+            <NavItem className="navBorderTop">
               <NavLink
                 className="nav-link"
                 to="/#Shows"
@@ -26,8 +26,8 @@ const Header = () => {
               >
                 Shows
               </NavLink>
-            </NavItem>
-            <NavItem>
+            </NavItem >
+            <NavItem className='navBorder'>
               <NavLink
                 className="nav-link"
                 to="/#About"
@@ -36,8 +36,8 @@ const Header = () => {
               >
                 About
               </NavLink>
-            </NavItem>
-            <NavItem>
+            </NavItem >
+            <NavItem className='navBorder'>
               <NavLink
                 className="nav-link"
                 to="/#Vent"
@@ -47,7 +47,7 @@ const Header = () => {
                 Vent!
               </NavLink>
             </NavItem>
-            <NavItem>
+            <NavItem className='navBorderBottom'>
               <NavLink
                 className="nav-link"
                 to="/#Contact"

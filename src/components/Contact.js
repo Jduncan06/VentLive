@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import {
   Row,
   Col,
@@ -91,9 +91,7 @@ const Contact = () => {
               email: "",
             }}
           >
-            <Form
-              onSubmit={sendEmail}
-            >
+            <Form onSubmit={sendEmail}>
               <FormGroup>
                 <Label htmlFor="firstName">Name</Label>
                 <Row>
