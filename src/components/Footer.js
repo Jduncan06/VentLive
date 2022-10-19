@@ -26,6 +26,7 @@ const Footer = () => {
             </a>{" "}
           </Col>
         </Row>
+        <p className="signature">Website Created by Justin Duncan</p>
       </Container>
     </footer>
   );

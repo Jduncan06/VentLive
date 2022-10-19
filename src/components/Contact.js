@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import {
   Row,
   Col,
@@ -16,17 +16,15 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const form = useRef();
 
   const sendEmail = (e) => {
     setModalOpen(false);
     e.preventDefault();
-    console.log(form.current);
     emailjs
       .sendForm(
         "service_qxglpcd",
         "template_zo4xeva",
-        form.current,
+        e.target,
         "xJivMVX_l4dvUFuyK"
       )
       .then(
@@ -94,8 +92,7 @@ const Contact = () => {
             }}
           >
             <Form
-            ref={form}
-            onSubmit={sendEmail}
+              onSubmit={sendEmail}
             >
               <FormGroup>
                 <Label htmlFor="firstName">Name</Label>
